@@ -14,7 +14,10 @@ Repository with collection of some rust exercises solved by me.
 ## Exercism
 
 1. [Hello World](exercism-solutions/rust/hello-world/src/lib.rs) ✔️
-2. [Reverse String](exercism-solutions/rust/reverse-string/src/lib.rs)
+2. [Reverse String](exercism-solutions/rust/reverse-string/src/lib.rs) ✔️
+3. [Lucian's Luscious Lasagna](exercism-solutions/rust/lucians-luscious-lasagna/src/lib.rs) ✔️
+4. [Assembly Line](exercism-solutions/rust/assembly-line/src/lib.rs) ✔️
+5. [A Short Fibonacci Sequence](exercism-solutions/rust/short-fibonacci/src/lib.rs) ✔️
 
 ## Resources
 
