@@ -4,7 +4,17 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" style="width:20%">
 </p>
 
-Repository with collection of some simple rust-exercises solved by me.
+Repository with collection of some rust exercises solved by me.
+
+## Project structure
+
+1. `example-project` - playground
+2. `exercism-solutions` - collection of solved tasks from [exercism-rust](https://exercism.org/tracks/rust/exercises)
+
+## Exercism
+
+1. [Hello World](exercism-solutions/rust/hello-world/src/lib.rs) ✔️
+2. [Reverse String](exercism-solutions/rust/reverse-string/src/lib.rs)
 
 ## Resources
 
