@@ -9,7 +9,8 @@ use reverse_string::*;
 
 /// Process a single test case for the property `reverse`
 fn process_reverse_case(input: &str, expected: &str) {
-    assert_eq!(&reverse(input), expected)
+    assert_eq!(&reverse(input), expected);
+    assert_eq!(&reverse_alternative(input), expected);
 }
 
 #[test]
@@ -55,7 +56,6 @@ fn test_wide_characters() {
 }
 
 #[test]
-#[ignore]
 #[cfg(feature = "grapheme")]
 /// grapheme clusters
 fn test_grapheme_clusters() {
