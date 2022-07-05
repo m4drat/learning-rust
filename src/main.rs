@@ -1,34 +1,30 @@
-use std::io;
-use std::cmp::Ordering;
-use rand::Rng;
+struct ComplexRef<'a>
+{
+    first_ref: &'a i32,
+    second_ref: &'a i32
+}
 
 fn main() {
-    loop {
-        println!("Enter your secret number: ");
-        let mut guess = String::new();
+    let a: i32 = 37;
+    let b: i32 = 13;
     
-        io::stdin()
-            .read_line(&mut guess)
-            .expect("Failed to read line");
+    let something: ComplexRef = ComplexRef {
+        first_ref: &a,
+        second_ref: &b
+    };
     
-        println!("You guessed: {guess}");
-    
-        let secret_num = rand::thread_rng().gen_range(1..=5);
-        let guess_int: u32 = match guess.trim().parse() {
-            Ok(num) => num,
-            Err(_) => {
-                println!("Incorrect number!");
-                continue;
-            }
-        };
-    
-        match guess_int.cmp(&secret_num) {
-            Ordering::Less => println!("Too small!"),
-            Ordering::Greater => println!("Too big!"),
-            Ordering::Equal => {
-                println!("You win!");
-                break;
-            },
-        }
+    let result;
+    {
+        let something_new = something;
+        result = func(&a, &something_new);
+    }
+    println!("{}", result);
+}
+
+fn func<'a, 'b>(a: &'a i32, cr: &'b ComplexRef<'a>) -> &'a i32 {
+    if *a < *cr.second_ref {
+        a
+    } else {
+        cr.second_ref
     }
 }
