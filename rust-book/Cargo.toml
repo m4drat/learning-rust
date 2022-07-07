@@ -11,6 +11,14 @@ path = "src/structs.rs"
 name = "enums"
 path = "src/enums.rs"
 
+[[bin]]
+name = "hashmaps"
+path = "src/hashmaps.rs"
+
+[[bin]]
+name = "error_handling"
+path = "src/error_handling.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
