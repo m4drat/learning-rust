@@ -1,0 +1,14 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./exercism-solutions/rust/assembly-line/Cargo.toml",
+        "./exercism-solutions/rust/health-statistics/Cargo.toml",
+        "./exercism-solutions/rust/hello-world/Cargo.toml",
+        "./exercism-solutions/rust/lucians-luscious-lasagna/Cargo.toml",
+        "./exercism-solutions/rust/resistor-color/Cargo.toml",
+        "./exercism-solutions/rust/reverse-string/Cargo.toml",
+        "./exercism-solutions/rust/semi-structured-logs/Cargo.toml",
+        "./exercism-solutions/rust/short-fibonacci/Cargo.toml",
+        "./rust-book/Cargo.toml",
+        "./example-project/Cargo.toml"
+    ]
+}

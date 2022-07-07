@@ -1,0 +1,16 @@
+[package]
+edition = "2021"
+name = "rust-book"
+version = "0.1.0"
+
+[[bin]]
+name = "structs"
+path = "src/structs.rs"
+
+[[bin]]
+name = "enums"
+path = "src/enums.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
