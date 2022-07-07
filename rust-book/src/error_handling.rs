@@ -1,5 +1,23 @@
 use std::{fs::File, io::ErrorKind, io::Read, io, error::Error};
 
+// https://doc.rust-lang.org/book/ch09-03-to-panic-or-not-to-panic.html
+pub struct Guess {
+    value: i32,
+}
+
+impl Guess {
+    pub fn new(value: i32) -> Guess {
+        if value < 1 || value > 100 {
+            panic!("Guess value must be between 1 and 100, got {}.", value);
+        }
+
+        Guess { value }
+    }
+
+    pub fn value(&self) -> i32 {
+        self.value
+    }
+}
 
 fn main() -> Result<(), Box<dyn Error>> {
     let f = match File::open("hello.txt") {
