@@ -18,8 +18,9 @@ Repository with collection of some rust exercises solved by me.
 3. [Lucian's Luscious Lasagna](exercism-solutions/rust/lucians-luscious-lasagna/src/lib.rs) ✔️
 4. [Assembly Line](exercism-solutions/rust/assembly-line/src/lib.rs) ✔️
 5. [A Short Fibonacci Sequence](exercism-solutions/rust/short-fibonacci/src/lib.rs) ✔️
-6. [Semi Structured Logs](exercism-solutions/rust/semi-structured-logs/src/lib.rs)
-7. [Resistor Color](exercism-solutions/rust/resistor-color/src/lib.rs)
+6. [Semi Structured Logs](exercism-solutions/rust/semi-structured-logs/src/lib.rs) ✔️
+7. [Resistor Color](exercism-solutions/rust/resistor-color/src/lib.rs) ✔️
+8. [Health Statistics](exercism-solutions/rust/health-statistics/src/lib.rs) ✔️
 
 ## Resources
 

@@ -17,6 +17,7 @@ pub enum ResistorColor {
     White = 9,
 }
 
+// Required if we want to use .to_string() method
 impl fmt::Display for ResistorColor {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{:?}", self)
