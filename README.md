@@ -11,6 +11,19 @@ Repository with collection of some rust exercises solved by me.
 1. `example-project` - playground
 2. `exercism-solutions` - collection of solved tasks from [exercism-rust](https://exercism.org/tracks/rust/exercises)
 
+## Rust book completed chapters
+
+1. Getting Started ✔️
+2. Programming a Guessing Game ✔️
+3. Common Programming Concepts ✔️
+4. Understanding Ownership ✔️
+5. Using Structs to Structure Related Data ✔️
+6. Enums and Pattern Matching ✔️
+7. Managing Growing Projects with Packages, Crates, and Modules ✔️
+8. Common Collections ✔️
+9. Error Handling ✔️
+10. Generic Types, Traits, and Lifetimes ✔️
+
 ## Exercism
 
 1. [Hello World](exercism-solutions/rust/hello-world/src/lib.rs) ✔️

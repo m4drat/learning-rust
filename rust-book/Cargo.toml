@@ -19,6 +19,19 @@ path = "src/hashmaps.rs"
 name = "error_handling"
 path = "src/error_handling.rs"
 
+[[bin]]
+name = "generics"
+path = "src/generics.rs"
+
+[[bin]]
+name = "generics_largest_using_ref"
+path = "src/generics_largest_using_ref.rs"
+
+[[bin]]
+name = "lifetimes"
+path = "src/lifetimes.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+num-traits = "0.2"
