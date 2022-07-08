@@ -25,6 +25,7 @@ Repository with collection of some rust exercises solved by me.
 9. Error Handling ✔️
 10. Generic Types, Traits, and Lifetimes ✔️
 11. Writing Automated Tests ✔️
+12. An I/O Project: Building a Command Line Program ✔️
 
 ## Exercism
 
