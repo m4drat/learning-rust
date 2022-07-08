@@ -10,8 +10,9 @@ Repository with collection of some rust exercises solved by me.
 
 1. `example-project` - playground
 2. `exercism-solutions` - collection of solved tasks from [exercism-rust](https://exercism.org/tracks/rust/exercises)
+3. `rust-book` - some code snippets based on [Rust book](https://doc.rust-lang.org/book/title-page.html)
 
-## Rust book completed chapters
+## Rust book - completed chapters
 
 1. Getting Started ✔️
 2. Programming a Guessing Game ✔️
@@ -23,6 +24,7 @@ Repository with collection of some rust exercises solved by me.
 8. Common Collections ✔️
 9. Error Handling ✔️
 10. Generic Types, Traits, and Lifetimes ✔️
+11. Writing Automated Tests ✔️
 
 ## Exercism
 

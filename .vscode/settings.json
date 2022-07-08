@@ -8,7 +8,8 @@
         "./exercism-solutions/rust/reverse-string/Cargo.toml",
         "./exercism-solutions/rust/semi-structured-logs/Cargo.toml",
         "./exercism-solutions/rust/short-fibonacci/Cargo.toml",
-        "./rust-book/Cargo.toml",
+        "./rust-book/book/Cargo.toml",
+        "./rust-book/minigrep/Cargo.toml",
         "./example-project/Cargo.toml"
     ]
 }
