@@ -47,6 +47,7 @@ Repository with collection of some rust exercises solved by me.
 5. [Rust by practice](https://practice.rs/why-exercise.html)
 6. [A half hour to learn rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
 7. [Advanced lifetimes](http://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/second-edition/ch19-02-advanced-lifetimes.html)
+8. [The Rustonomicon](https://doc.rust-lang.org/nomicon/intro.html)
 
 ### Youtube
 
