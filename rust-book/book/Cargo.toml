@@ -35,6 +35,26 @@ path = "src/lifetimes.rs"
 name = "tests"
 path = "src/tests.rs"
 
+[[bin]]
+name = "functional_features"
+path = "src/functional_features.rs"
+
+[[bin]]
+name = "smart_pointers"
+path = "src/smart_pointers.rs"
+
+[[bin]]
+name = "smart_pointers_refcell"
+path = "src/smart_pointers_refcell.rs"
+
+[[bin]]
+name = "smart_pointers_ref_cycles"
+path = "src/smart_pointers_ref_cycles.rs"
+
+[[bin]]
+name = "concurrency"
+path = "src/concurrency.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
