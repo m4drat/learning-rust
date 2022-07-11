@@ -26,6 +26,14 @@ Repository with collection of some rust exercises solved by me.
 10. Generic Types, Traits, and Lifetimes ✔️
 11. Writing Automated Tests ✔️
 12. An I/O Project: Building a Command Line Program ✔️
+13. Functional Language Features: Iterators and Closures ✔️
+14. More About Cargo and Crates.io ✔️
+15. Smart Pointers ✔️
+16. Fearless Concurrency ✔️
+17. Object Oriented Programming Features of Rust ✔️
+18. Patterns and Matching ❌
+19. Advanced Features ❌
+20. Final Project: Building a Multithreaded Web Server ❌
 
 ## Exercism
 
@@ -36,7 +44,8 @@ Repository with collection of some rust exercises solved by me.
 5. [A Short Fibonacci Sequence](exercism-solutions/rust/short-fibonacci/src/lib.rs) ✔️
 6. [Semi Structured Logs](exercism-solutions/rust/semi-structured-logs/src/lib.rs) ✔️
 7. [Resistor Color](exercism-solutions/rust/resistor-color/src/lib.rs) ✔️
-8. [Health Statistics](exercism-solutions/rust/health-statistics/src/lib.rs) ✔️
+8. [Health Statistics](exercism-solutions/rust/health-statistics/src/lib.rs) ❌
+9. [Rectangles](exercism-solutions/rust/rectangles/src/lib.rs) ❌
 
 ## Resources
 
@@ -48,6 +57,8 @@ Repository with collection of some rust exercises solved by me.
 6. [A half hour to learn rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
 7. [Advanced lifetimes](http://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/second-edition/ch19-02-advanced-lifetimes.html)
 8. [The Rustonomicon](https://doc.rust-lang.org/nomicon/intro.html)
+9. [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html)
+10. [List of official rust books](https://lborb.github.io/book/official.html)
 
 ### Youtube
 

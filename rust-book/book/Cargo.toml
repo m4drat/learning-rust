@@ -55,6 +55,18 @@ path = "src/smart_pointers_ref_cycles.rs"
 name = "concurrency"
 path = "src/concurrency.rs"
 
+[[bin]]
+name = "oop_features"
+path = "src/oop_features.rs"
+
+[[bin]]
+name = "oop_features_state_pattern_types"
+path = "src/oop_features_state_pattern_types.rs"
+
+[[bin]]
+name = "oop_features_state_pattern"
+path = "src/oop_features_state_pattern.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
