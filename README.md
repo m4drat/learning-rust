@@ -32,8 +32,8 @@ Repository with collection of some rust exercises solved by me.
 16. Fearless Concurrency ✔️
 17. Object Oriented Programming Features of Rust ✔️
 18. Patterns and Matching ✔️
-19. Advanced Features ❌
-20. Final Project: Building a Multithreaded Web Server ❌
+19. Advanced Features ✔️
+20. Final Project: Building a Multithreaded Web Server ✔️
 
 ## Exercism
 
@@ -60,6 +60,7 @@ Repository with collection of some rust exercises solved by me.
 9. [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html)
 10. [List of official rust books](https://lborb.github.io/book/official.html)
 11. [Some algorithms implemented in Rust](https://github.com/TheAlgorithms/Rust)
+12. [The Little Book of Rust Macros](https://veykril.github.io/tlborm/)
 
 ### Youtube
 

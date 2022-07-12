@@ -4,6 +4,10 @@ name = "rust-book"
 version = "0.1.0"
 
 [[bin]]
+name = "3_common_programming_concepts_loops"
+path = "src/3_common_programming_concepts_loops.rs"
+
+[[bin]]
 name = "5_structs"
 path = "src/5_structs.rs"
 
@@ -78,6 +82,18 @@ path = "src/19_unsafe_rust.rs"
 [[bin]]
 name = "19_advanced_traits"
 path = "src/19_advanced_traits.rs"
+
+[[bin]]
+name = "19_advanced_types"
+path = "src/19_advanced_types.rs"
+
+[[bin]]
+name = "19_advanced_functions_and_closures"
+path = "src/19_advanced_functions_and_closures.rs"
+
+[[bin]]
+name = "19_macros"
+path = "src/19_macros.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
