@@ -31,7 +31,7 @@ Repository with collection of some rust exercises solved by me.
 15. Smart Pointers ✔️
 16. Fearless Concurrency ✔️
 17. Object Oriented Programming Features of Rust ✔️
-18. Patterns and Matching ❌
+18. Patterns and Matching ✔️
 19. Advanced Features ❌
 20. Final Project: Building a Multithreaded Web Server ❌
 
@@ -59,6 +59,7 @@ Repository with collection of some rust exercises solved by me.
 8. [The Rustonomicon](https://doc.rust-lang.org/nomicon/intro.html)
 9. [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html)
 10. [List of official rust books](https://lborb.github.io/book/official.html)
+11. [Some algorithms implemented in Rust](https://github.com/TheAlgorithms/Rust)
 
 ### Youtube
 

@@ -67,6 +67,10 @@ path = "src/oop_features_state_pattern_types.rs"
 name = "oop_features_state_pattern"
 path = "src/oop_features_state_pattern.rs"
 
+[[bin]]
+name = "patterns_matching"
+path = "src/patterns_matching.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
