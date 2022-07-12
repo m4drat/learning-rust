@@ -4,72 +4,80 @@ name = "rust-book"
 version = "0.1.0"
 
 [[bin]]
-name = "structs"
-path = "src/structs.rs"
+name = "5_structs"
+path = "src/5_structs.rs"
 
 [[bin]]
-name = "enums"
-path = "src/enums.rs"
+name = "6_enums"
+path = "src/6_enums.rs"
 
 [[bin]]
-name = "hashmaps"
-path = "src/hashmaps.rs"
+name = "8_hashmaps"
+path = "src/8_hashmaps.rs"
 
 [[bin]]
-name = "error_handling"
-path = "src/error_handling.rs"
+name = "9_error_handling"
+path = "src/9_error_handling.rs"
 
 [[bin]]
-name = "generics"
-path = "src/generics.rs"
+name = "10_generics"
+path = "src/10_generics.rs"
 
 [[bin]]
-name = "generics_largest_using_ref"
-path = "src/generics_largest_using_ref.rs"
+name = "10_generics_largest_using_ref"
+path = "src/10_generics_largest_using_ref.rs"
 
 [[bin]]
-name = "lifetimes"
-path = "src/lifetimes.rs"
+name = "10_lifetimes"
+path = "src/10_lifetimes.rs"
 
 [[bin]]
-name = "tests"
-path = "src/tests.rs"
+name = "11_tests"
+path = "src/11_tests.rs"
 
 [[bin]]
-name = "functional_features"
-path = "src/functional_features.rs"
+name = "13_functional_features"
+path = "src/13_functional_features.rs"
 
 [[bin]]
-name = "smart_pointers"
-path = "src/smart_pointers.rs"
+name = "15_smart_pointers"
+path = "src/15_smart_pointers.rs"
 
 [[bin]]
-name = "smart_pointers_refcell"
-path = "src/smart_pointers_refcell.rs"
+name = "15_smart_pointers_refcell"
+path = "src/15_smart_pointers_refcell.rs"
 
 [[bin]]
-name = "smart_pointers_ref_cycles"
-path = "src/smart_pointers_ref_cycles.rs"
+name = "15_smart_pointers_ref_cycles"
+path = "src/15_smart_pointers_ref_cycles.rs"
 
 [[bin]]
-name = "concurrency"
-path = "src/concurrency.rs"
+name = "16_concurrency"
+path = "src/16_concurrency.rs"
 
 [[bin]]
-name = "oop_features"
-path = "src/oop_features.rs"
+name = "17_oop_features"
+path = "src/17_oop_features.rs"
 
 [[bin]]
-name = "oop_features_state_pattern_types"
-path = "src/oop_features_state_pattern_types.rs"
+name = "17_oop_features_state_pattern_types"
+path = "src/17_oop_features_state_pattern_types.rs"
 
 [[bin]]
-name = "oop_features_state_pattern"
-path = "src/oop_features_state_pattern.rs"
+name = "17_oop_features_state_pattern"
+path = "src/17_oop_features_state_pattern.rs"
 
 [[bin]]
-name = "patterns_matching"
-path = "src/patterns_matching.rs"
+name = "18_patterns_matching"
+path = "src/18_patterns_matching.rs"
+
+[[bin]]
+name = "19_unsafe_rust"
+path = "src/19_unsafe_rust.rs"
+
+[[bin]]
+name = "19_advanced_traits"
+path = "src/19_advanced_traits.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
