@@ -9,6 +9,7 @@
         "./exercism-solutions/rust/semi-structured-logs/Cargo.toml",
         "./exercism-solutions/rust/short-fibonacci/Cargo.toml",
         "./exercism-solutions/rust/low-power-embedded-game/Cargo.toml",
+        "./exercism-solutions/rust/rectangles/Cargo.toml",
         "./rust-book/book/Cargo.toml",
         "./rust-book/minigrep/Cargo.toml",
         "./rust-book/web-server/Cargo.toml",

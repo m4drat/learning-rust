@@ -44,8 +44,9 @@ Repository with collection of some rust exercises solved by me.
 5. [A Short Fibonacci Sequence](exercism-solutions/rust/short-fibonacci/src/lib.rs) ✔️
 6. [Semi Structured Logs](exercism-solutions/rust/semi-structured-logs/src/lib.rs) ✔️
 7. [Resistor Color](exercism-solutions/rust/resistor-color/src/lib.rs) ✔️
-8. [Health Statistics](exercism-solutions/rust/health-statistics/src/lib.rs) ❌
-9. [Rectangles](exercism-solutions/rust/rectangles/src/lib.rs) ❌
+8. [Health Statistics](exercism-solutions/rust/health-statistics/src/lib.rs) ✔️
+9. [Low-Power Embedded GameExercise is completed](exercism-solutions/rust/low-power-embedded-game/src/lib.rs) ✔️
+10. [Rectangles](exercism-solutions/rust/rectangles/src/lib.rs) ✔️
 
 ## Resources
 
