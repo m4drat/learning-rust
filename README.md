@@ -47,6 +47,8 @@ Repository with collection of some rust exercises solved by me.
 8. [Health Statistics](exercism-solutions/rust/health-statistics/src/lib.rs) ✔️
 9. [Low-Power Embedded GameExercise is completed](exercism-solutions/rust/low-power-embedded-game/src/lib.rs) ✔️
 10. [Rectangles](exercism-solutions/rust/rectangles/src/lib.rs) ✔️
+11. [Gigasecond](exercism-solutions/rust/gigasecond/src/lib.rs) ✔️
+12. [Decimal](exercism-solutions/rust/decimal/src/lib.rs) ✔️
 
 ## Resources
 
