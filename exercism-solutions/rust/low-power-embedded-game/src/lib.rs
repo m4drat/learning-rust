@@ -16,7 +16,7 @@ pub fn evens<T>(iter: impl Iterator<Item = T>) -> impl Iterator<Item = T> {
 
 pub struct Position(pub i16, pub i16);
 
-const ORIGIN: Position = {0, 0};
+const ORIGIN: Position = Position(0, 0);
 
 impl Position {
     pub fn manhattan(&self) -> i16 {
