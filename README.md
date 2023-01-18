@@ -4,12 +4,12 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" style="width:20%">
 </p>
 
-Repository with collection of some rust exercises solved by me.
+Repository with the collection of some rust exercises solved by me.
 
 ## Project structure
 
 1. `example-project` - playground
-2. `exercism-solutions` - collection of solved tasks from [exercism-rust](https://exercism.org/tracks/rust/exercises)
+2. `exercism-solutions` - a collection of solved tasks from [exercism-rust](https://exercism.org/tracks/rust/exercises)
 3. `rust-book` - some code snippets based on [Rust book](https://doc.rust-lang.org/book/title-page.html)
 
 ## Rust book - completed chapters
@@ -49,6 +49,13 @@ Repository with collection of some rust exercises solved by me.
 10. [Rectangles](exercism-solutions/rust/rectangles/src/lib.rs) ✔️
 11. [Gigasecond](exercism-solutions/rust/gigasecond/src/lib.rs) ✔️
 12. [Decimal](exercism-solutions/rust/decimal/src/lib.rs) ✔️
+13. [Alphametics](exercism-solutions/rust/alphametics/src/lib.rs) ✔️
+14. [Doubly Linked List](exercism-solutions/rust/doubly-linked-list/src/lib.rs) ❌
+15. [Xorcism](exercism-solutions/rust/xorcism/src/lib.rs) ❌
+16. [Circular Buffer](exercism-solutions/rust/circular-buffer/src/lib.rs) ❌
+17. [Forth](exercism-solutions/rust/forth/src/lib.rs) ❌
+18. [Macros](exercism-solutions/rust/macros/src/lib.rs) ❌
+19. [Parallel Letter Frequency](exercism-solutions/rust/parallel-letter-frequency/src/lib.rs) ❌
 
 ## Resources
 
