@@ -4,8 +4,60 @@ use std::{
     iter::zip,
 };
 
+fn find_factors(input: &str) -> HashMap<char, i64> {
+    let mut factors: HashMap<char, i64> = HashMap::with_capacity(10);
+    let mut position: u32 = 0;
+    let mut sign: i64 = -1;
+
+    input
+        .chars()
+        .filter(|ch| !ch.is_whitespace())
+        .rev()
+        .for_each(|ch| match ch {
+            '=' => {
+                sign = 1;
+                position = 0
+            }
+            '+' => {
+                position = 0;
+            }
+            _ => {
+                *factors.entry(ch).or_insert(0) += sign * 10_i64.pow(position);
+                position += 1;
+            }
+        });
+
+    factors
+}
+
 pub fn solve(input: &str) -> Option<HashMap<char, u8>> {
-    solve_improved(input)
+    let first_letters = input
+        .split(&['+', '='])
+        .filter_map(|part| part.trim().chars().nth(0))
+        .collect::<HashSet<_>>();
+    let factors = find_factors(input);
+
+    for perm in (0..=9).permutations(factors.len()) {
+        let sum = factors
+            .values()
+            .zip(&perm)
+            .fold(0, |sum, (factor, num)| sum + factor * num);
+        let first_char_is_invalid = factors
+            .keys()
+            .zip(&perm)
+            .any(|(ch, num)| *num == 0 && first_letters.contains(ch));
+        if sum == 0 && !first_char_is_invalid {
+            return Some(
+                factors
+                    .keys()
+                    .zip(&perm)
+                    .map(|(k, v)| (*k, *v as u8))
+                    .collect::<HashMap<_, _>>(),
+            );
+        }
+    }
+
+    None
 }
 
 pub fn solve_improved(input: &str) -> Option<HashMap<char, u8>> {
@@ -21,9 +73,17 @@ pub fn solve_improved(input: &str) -> Option<HashMap<char, u8>> {
         return None;
     }
 
-    for perm in (0..10).permutations(unique_chars.len()) {
+    for perm in (0..=9).permutations(unique_chars.len()) {
         let curr_try: HashMap<&char, &u8> =
             HashMap::from_iter(zip(unique_chars.iter(), perm.iter()));
+
+        // if lhs
+        //     .iter()
+        //     .any(|num_str| **curr_try.get(&num_str.chars().next().unwrap()).unwrap() == 0)
+        //     || **curr_try.get(&rhs.chars().next().unwrap()).unwrap() == 0
+        // {
+        //     continue;
+        // }
 
         let lhs_sum = lhs.iter().try_fold(0 as u64, |sum, elem| {
             Some(sum + check_and_convert(elem, &curr_try)?)
