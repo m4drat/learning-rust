@@ -16,6 +16,7 @@
         "./exercism-solutions/rust/role-playing-game/Cargo.toml",
         "./exercism-solutions/rust/rpn-calculator/Cargo.toml",
         "./exercism-solutions/rust/magazine-cutout/Cargo.toml",
+        "./exercism-solutions/rust/grade-school/Cargo.toml",
         "./rust-book/book/Cargo.toml",
         "./rust-book/minigrep/Cargo.toml",
         "./rust-book/web-server/Cargo.toml",
