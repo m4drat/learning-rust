@@ -54,12 +54,13 @@ Repository with the collection of some rust exercises solved by me.
 15. [RPN Calculator](exercism-solutions/rust/rpn-calculator/src/lib.rs) ✔️
 16. [Magazine Cutout](exercism-solutions/rust/magazine-cutout/src/lib.rs) ✔️
 17. [Grade School](exercism-solutions/rust/grade-school/src/lib.rs) ✔️
-18. [Doubly Linked List](exercism-solutions/rust/doubly-linked-list/src/lib.rs) ❌
-19. [Xorcism](exercism-solutions/rust/xorcism/src/lib.rs) ❌
-20. [Circular Buffer](exercism-solutions/rust/circular-buffer/src/lib.rs) ❌
-21. [Forth](exercism-solutions/rust/forth/src/lib.rs) ❌
-22. [Macros](exercism-solutions/rust/macros/src/lib.rs) ❌
-23. [Parallel Letter Frequency](exercism-solutions/rust/parallel-letter-frequency/src/lib.rs) ❌
+18. [Nucleotide Count](exercism-solutions/rust/nucleotide-count/src/lib.rs) ✔️
+19. [Doubly Linked List](exercism-solutions/rust/doubly-linked-list/src/lib.rs) ❌
+20. [Xorcism](exercism-solutions/rust/xorcism/src/lib.rs) ❌
+21. [Circular Buffer](exercism-solutions/rust/circular-buffer/src/lib.rs) ❌
+22. [Forth](exercism-solutions/rust/forth/src/lib.rs) ❌
+23. [Macros](exercism-solutions/rust/macros/src/lib.rs) ❌
+24. [Parallel Letter Frequency](exercism-solutions/rust/parallel-letter-frequency/src/lib.rs) ❌
 
 ## Resources
 
