@@ -3,7 +3,7 @@
 #![allow(unused)]
 
 pub fn expected_minutes_in_oven() -> i32 {
-    return 40;
+    40
 }
 
 pub fn remaining_minutes_in_oven(actual_minutes_in_oven: i32) -> i32 {

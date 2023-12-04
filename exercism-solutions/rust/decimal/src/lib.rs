@@ -1,4 +1,4 @@
-use num_bigint::{BigInt, BigUint, ToBigInt, ToBigUint};
+use num_bigint::{BigInt, BigUint, ToBigInt};
 use num_traits::{ToPrimitive, Zero};
 use std::ops;
 
@@ -85,9 +85,9 @@ impl Decimal {
         //     return Some(Decimal::new(integer, fraction));
         // }
 
-        let mantissa = input.replace(".", "").parse::<BigInt>().ok()?;
+        let mantissa = input.replace('.', "").parse::<BigInt>().ok()?;
 
-        if let Some(index) = input.find(".") {
+        if let Some(index) = input.find('.') {
             Some(Decimal::new(
                 mantissa,
                 (input.len() - index - 1).to_bigint().unwrap(),

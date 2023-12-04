@@ -17,11 +17,11 @@ impl Corner {
         if board[x as usize].chars().nth(y as usize).unwrap() != '+' {
             return None;
         }
-        Some(Corner { x: x, y: y })
+        Some(Corner { x, y })
     }
 
     /// Checks whether two corners have at least one common coordinate
-    /// 
+    ///
     fn check_edge_can_exist(&self, another: &Corner) -> Option<Direction> {
         if (self.x != another.x) && (self.y != another.y) {
             return None;
@@ -35,7 +35,7 @@ impl Corner {
     }
 
     /// Strictly checks whether two corners are connected with an edge
-    /// 
+    ///
     fn check_forms_an_edge(&self, another: &Corner, board: &[&str]) -> bool {
         // Check that edge can exists
         let fixed_coord = match self.check_edge_can_exist(another) {
@@ -146,10 +146,7 @@ mod tests {
             "+---+-------+", // 4
         ];
 
-        assert_eq!(
-            Corner { x: 8, y: 5 }.check_forms_an_edge(&Corner { x: 7, y: 3 }, lines),
-            false
-        );
+        assert!(!Corner { x: 8, y: 5 }.check_forms_an_edge(&Corner { x: 7, y: 3 }, lines));
     }
 
     #[test]
@@ -165,10 +162,7 @@ mod tests {
             "+---+-------+", // 4
         ];
 
-        assert_eq!(
-            Corner { x: 0, y: 0 }.check_forms_an_edge(&Corner { x: 0, y: 7 }, lines),
-            true
-        );
+        assert!(Corner { x: 0, y: 0 }.check_forms_an_edge(&Corner { x: 0, y: 7 }, lines));
     }
 
     #[test]
@@ -184,15 +178,8 @@ mod tests {
             "+---+--+----+", // 4
         ];
 
-        assert_eq!(
-            Corner { x: 2, y: 0 }.check_forms_an_edge(&Corner { x: 4, y: 0 }, lines),
-            true
-        );
-
-        assert_eq!(
-            Corner { x: 2, y: 3 }.check_forms_an_edge(&Corner { x: 4, y: 3 }, lines),
-            false
-        );
+        assert!(Corner { x: 2, y: 0 }.check_forms_an_edge(&Corner { x: 4, y: 0 }, lines));
+        assert!(!Corner { x: 2, y: 3 }.check_forms_an_edge(&Corner { x: 4, y: 3 }, lines));
     }
 
     #[test]
@@ -208,14 +195,7 @@ mod tests {
             "+---+-------+", // 4
         ];
 
-        assert_eq!(
-            Corner { x: 2, y: 7 }.check_forms_an_edge(&Corner { x: 2, y: 10 }, lines),
-            true
-        );
-
-        assert_eq!(
-            Corner { x: 2, y: 7 }.check_forms_an_edge(&Corner { x: 2, y: 12 }, lines),
-            false
-        );
+        assert!(Corner { x: 2, y: 7 }.check_forms_an_edge(&Corner { x: 2, y: 10 }, lines));
+        assert!(!Corner { x: 2, y: 7 }.check_forms_an_edge(&Corner { x: 2, y: 12 }, lines));
     }
 }

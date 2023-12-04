@@ -33,7 +33,7 @@ fn find_factors(input: &str) -> HashMap<char, i64> {
 pub fn solve(input: &str) -> Option<HashMap<char, u8>> {
     let first_letters = input
         .split(&['+', '='])
-        .filter_map(|part| part.trim().chars().nth(0))
+        .filter_map(|part| part.trim().chars().next())
         .collect::<HashSet<_>>();
     let factors = find_factors(input);
 
@@ -85,7 +85,7 @@ pub fn solve_improved(input: &str) -> Option<HashMap<char, u8>> {
         //     continue;
         // }
 
-        let lhs_sum = lhs.iter().try_fold(0 as u64, |sum, elem| {
+        let lhs_sum = lhs.iter().try_fold(0_u64, |sum, elem| {
             Some(sum + check_and_convert(elem, &curr_try)?)
         });
         let rhs_sum = check_and_convert(rhs, &curr_try);
@@ -119,7 +119,7 @@ fn check_and_convert(to_convert: &str, map: &HashMap<&char, &u8>) -> Option<u64>
 const NUMBERS: &[char] = &['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 pub fn solve_default(input: &str) -> Option<HashMap<char, u8>> {
-    let cleaned_string = input.replace(" ", "").replace("==", "=");
+    let cleaned_string = input.replace(' ', "").replace("==", "=");
     let unique_chars = cleaned_string
         .chars()
         .filter(|c| c.is_ascii_alphabetic())
@@ -137,7 +137,7 @@ pub fn solve_default(input: &str) -> Option<HashMap<char, u8>> {
         let numbers_str = curr_try.split(['+', '=']).collect::<Vec<_>>();
 
         for num in numbers_str.iter() {
-            if num.chars().nth(0).unwrap() == '0' {
+            if num.starts_with('0') {
                 continue 'loop_;
             }
         }

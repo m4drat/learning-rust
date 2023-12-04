@@ -23,7 +23,7 @@ impl<'a> School<'a> {
     }
 
     pub fn grades(&self) -> Vec<u32> {
-        self.grades.iter().map(|(k, _)| *k).collect::<Vec<_>>()
+        self.grades.keys().copied().collect::<Vec<_>>()
     }
 
     pub fn grade(&self, grade: u32) -> Vec<&'a str> {

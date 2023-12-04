@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"rust-analyzer.check.command": "clippy",
+		"rust-analyzer.linkedProjects": [
+			"./exercism-solutions/rust/alphametics/Cargo.toml",
+			"./exercism-solutions/rust/assembly-line/Cargo.toml",
+			"./exercism-solutions/rust/circular-buffer/Cargo.toml",
+			"./exercism-solutions/rust/decimal/Cargo.toml",
+			"./exercism-solutions/rust/doubly-linked-list/Cargo.toml",
+			"./exercism-solutions/rust/forth/Cargo.toml",
+			"./exercism-solutions/rust/gigasecond/Cargo.toml",
+			"./exercism-solutions/rust/grade-school/Cargo.toml",
+			"./exercism-solutions/rust/health-statistics/Cargo.toml",
+			"./exercism-solutions/rust/hello-world/Cargo.toml",
+			"./exercism-solutions/rust/low-power-embedded-game/Cargo.toml",
+			"./exercism-solutions/rust/lucians-luscious-lasagna/Cargo.toml",
+			"./exercism-solutions/rust/macros/Cargo.toml",
+			"./exercism-solutions/rust/magazine-cutout/Cargo.toml",
+			"./exercism-solutions/rust/nucleotide-count/Cargo.toml",
+			"./exercism-solutions/rust/parallel-letter-frequency/Cargo.toml",
+			"./exercism-solutions/rust/rectangles/Cargo.toml",
+			"./exercism-solutions/rust/resistor-color/Cargo.toml",
+			"./exercism-solutions/rust/reverse-string/Cargo.toml",
+			"./exercism-solutions/rust/role-playing-game/Cargo.toml",
+			"./exercism-solutions/rust/rpn-calculator/Cargo.toml",
+			"./exercism-solutions/rust/semi-structured-logs/Cargo.toml",
+			"./exercism-solutions/rust/short-fibonacci/Cargo.toml",
+			"./exercism-solutions/rust/xorcism/Cargo.toml",
+			"./rust-book/book/Cargo.toml",
+			"./rust-book/minigrep/Cargo.toml",
+			"./rust-book/web-server/Cargo.toml",
+			"./example-project/Cargo.toml"
+		]
+	}
+}

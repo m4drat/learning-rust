@@ -30,11 +30,11 @@ pub fn count_functional(nucleotide: char, dna: &str) -> Result<usize, char> {
     }
 
     dna.chars().try_fold(0, |acc: usize, ch: char| {
-        Ok(is_valid(ch)
-            .then(|| ch == nucleotide)
-            .ok_or(ch)?
-            .then(|| acc + 1)
-            .unwrap_or(acc))
+        Ok(if is_valid(ch).then_some(ch == nucleotide).ok_or(ch)? {
+            acc + 1
+        } else {
+            acc
+        })
     })
 }
 

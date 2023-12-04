@@ -1,5 +1,5 @@
+use enum_iterator::{all, Sequence};
 use int_enum::IntEnum;
-use enum_iterator::{all, last, cardinality, Sequence};
 use std::fmt;
 
 #[repr(u8)]
@@ -42,7 +42,7 @@ pub fn value_to_color_string(value: usize) -> String {
     // Alternative solution
     match ResistorColor::from_int(value as u8) {
         Ok(val) => format!("{:?}", val),
-        Err(_) => "value out of range".to_string()
+        Err(_) => "value out of range".to_string(),
     }
 }
 

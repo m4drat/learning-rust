@@ -16,12 +16,11 @@ pub fn log(level: LogLevel, message: &str) -> String {
         LogLevel::Info => info(message),
         LogLevel::Warning => warn(message),
         LogLevel::Error => error(message),
-        _ => panic!("Unimplemented log level!")
+        _ => panic!("Unimplemented log level!"),
     }
 }
 pub fn info(message: &str) -> String {
     format!("[INFO]: {message}")
-    
 }
 
 pub fn warn(message: &str) -> String {
