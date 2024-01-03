@@ -1,11 +1,13 @@
-use std::marker::PhantomData;
+use std::{mem::swap, ops::Index};
 
-pub struct CircularBuffer<T> {
-    // This field is here to make the template compile and not to
-    // complain about unused type parameter 'T'. Once you start
-    // solving the exercise, delete this field and the 'std::marker::PhantomData'
-    // import.
-    field: PhantomData<T>,
+pub struct CircularBuffer<T>
+where
+    T: Default + Clone,
+{
+    data: Vec<T>,
+    N: usize,
+    read_index: usize,
+    write_index: usize,
 }
 
 #[derive(Debug, PartialEq, Eq)]
@@ -14,30 +16,70 @@ pub enum Error {
     FullBuffer,
 }
 
-impl<T> CircularBuffer<T> {
+impl<T> CircularBuffer<T>
+where
+    T: Default + Clone,
+{
     pub fn new(capacity: usize) -> Self {
-        unimplemented!(
-            "Construct a new CircularBuffer with the capacity to hold {}.",
-            match capacity {
-                1 => "1 element".to_string(),
-                _ => format!("{} elements", capacity),
-            }
-        );
+        let capacity_plus_one = capacity + 1;
+        Self {
+            data: vec![T::default(); capacity_plus_one],
+            N: capacity_plus_one,
+            write_index: 0,
+            read_index: 0,
+        }
+    }
+
+    fn increment_write_index(&mut self) {
+        self.write_index = (self.write_index + 1) % self.N;
+    }
+
+    fn increment_read_index(&mut self) {
+        self.read_index = (self.read_index + 1) % self.N;
+    }
+
+    fn is_empty(&self) -> bool {
+        self.read_index == self.write_index
+    }
+
+    fn is_full(&self) -> bool {
+        (self.write_index + 1) % self.N == self.read_index
     }
 
     pub fn write(&mut self, _element: T) -> Result<(), Error> {
-        unimplemented!("Write the passed element to the CircularBuffer or return FullBuffer error if CircularBuffer is full.");
+        if self.is_full() {
+            return Err(Error::FullBuffer);
+        }
+
+        self.data[self.write_index] = _element;
+        self.increment_write_index();
+
+        Ok(())
     }
 
     pub fn read(&mut self) -> Result<T, Error> {
-        unimplemented!("Read the oldest element from the CircularBuffer or return EmptyBuffer error if CircularBuffer is empty.");
+        if self.is_empty() {
+            return Err(Error::EmptyBuffer);
+        }
+
+        let mut elem: T = T::default();
+        swap(&mut self.data[self.read_index], &mut elem);
+        self.increment_read_index();
+
+        Ok(elem)
     }
 
     pub fn clear(&mut self) {
-        unimplemented!("Clear the CircularBuffer.");
+        self.data = vec![T::default(); self.N];
+        self.read_index = 0;
+        self.write_index = 0;
     }
 
     pub fn overwrite(&mut self, _element: T) {
-        unimplemented!("Write the passed element to the CircularBuffer, overwriting the existing elements if CircularBuffer is full.");
+        self.data[self.write_index] = _element;
+        if self.is_full() {
+            self.increment_read_index();
+        }
+        self.increment_write_index();
     }
 }
