@@ -1,11 +1,11 @@
-use std::{mem::swap, ops::Index};
+use std::mem::swap;
 
 pub struct CircularBuffer<T>
 where
     T: Default + Clone,
 {
     data: Vec<T>,
-    N: usize,
+    n: usize,
     read_index: usize,
     write_index: usize,
 }
@@ -24,18 +24,18 @@ where
         let capacity_plus_one = capacity + 1;
         Self {
             data: vec![T::default(); capacity_plus_one],
-            N: capacity_plus_one,
+            n: capacity_plus_one,
             write_index: 0,
             read_index: 0,
         }
     }
 
     fn increment_write_index(&mut self) {
-        self.write_index = (self.write_index + 1) % self.N;
+        self.write_index = (self.write_index + 1) % self.n;
     }
 
     fn increment_read_index(&mut self) {
-        self.read_index = (self.read_index + 1) % self.N;
+        self.read_index = (self.read_index + 1) % self.n;
     }
 
     fn is_empty(&self) -> bool {
@@ -43,7 +43,7 @@ where
     }
 
     fn is_full(&self) -> bool {
-        (self.write_index + 1) % self.N == self.read_index
+        (self.write_index + 1) % self.n == self.read_index
     }
 
     pub fn write(&mut self, _element: T) -> Result<(), Error> {
@@ -70,7 +70,7 @@ where
     }
 
     pub fn clear(&mut self) {
-        self.data = vec![T::default(); self.N];
+        self.data = vec![T::default(); self.n];
         self.read_index = 0;
         self.write_index = 0;
     }

@@ -300,6 +300,16 @@ fn redefining_a_built_in_operator() {
     assert_eq!(vec![12], f.stack());
 }
 
+// #[test]
+// #[ignore]
+// fn can_redefine_a_built_in_operator_that_uses_the_same_operator() {
+//     let mut f = Forth::new();
+//     assert!(f.eval(": + 10 ;").is_ok());
+//     assert!(f.eval(": + + 1 + ;").is_ok());
+//     assert!(f.eval("+").is_ok());
+//     assert_eq!(vec![11], f.stack());
+// }
+
 #[test]
 #[ignore]
 fn can_use_different_words_with_the_same_name() {
@@ -308,6 +318,19 @@ fn can_use_different_words_with_the_same_name() {
     assert!(f.eval(": bar foo ;").is_ok());
     assert!(f.eval(": foo 6 ;").is_ok());
     assert!(f.eval("bar foo").is_ok());
+    assert_eq!(vec![5, 6], f.stack());
+}
+
+#[test]
+#[ignore]
+fn can_use_different_words_with_the_same_name_2() {
+    let mut f = Forth::new();
+    assert!(f.eval(": foo 5 ;").is_ok());
+    assert!(f.eval(": bar foo ;").is_ok());
+    assert!(f.eval(": foo 6 ;").is_ok());
+    assert!(f.eval("bar").is_ok());
+    assert_eq!(vec![5], f.stack());
+    assert!(f.eval("foo").is_ok());
     assert_eq!(vec![5, 6], f.stack());
 }
 
@@ -369,5 +392,18 @@ fn redefine_an_existing_word_with_another_existing_word() {
     assert!(f.eval(": foo 6 ;").is_ok());
     assert!(f.eval(": bar foo ;").is_ok());
     assert!(f.eval("bar foo").is_ok());
+    assert_eq!(vec![6, 6], f.stack());
+}
+
+#[test]
+#[ignore]
+fn redefine_an_existing_word_with_another_existing_word_2() {
+    let mut f = Forth::new();
+    assert!(f.eval(": foo 5 ;").is_ok());
+    assert!(f.eval(": bar foo ;").is_ok());
+    assert!(f.eval(": foo 6 ;").is_ok());
+    assert!(f.eval(": bar foo ;").is_ok());
+    assert!(f.eval("bar").is_ok());
+    assert!(f.eval("foo").is_ok());
     assert_eq!(vec![6, 6], f.stack());
 }
