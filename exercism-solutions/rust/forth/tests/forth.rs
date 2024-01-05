@@ -407,3 +407,15 @@ fn redefine_an_existing_word_with_another_existing_word_2() {
     assert!(f.eval("foo").is_ok());
     assert_eq!(vec![6, 6], f.stack());
 }
+
+#[test]
+#[ignore]
+fn check_scoping() {
+    let mut f = Forth::new();
+    assert!(f.eval(": foo0 1 ;").is_ok());
+    assert!(f.eval(": foo1 foo0 ;").is_ok());
+    assert!(f.eval(": foo1 foo0 ;").is_ok());
+    assert!(f.eval(": foo1 foo0 ;").is_ok());
+    assert!(f.eval("foo1").is_ok());
+    assert_eq!(vec![1], f.stack());
+}
