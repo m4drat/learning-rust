@@ -37,30 +37,49 @@ Repository with the collection of some rust exercises solved by me.
 
 ## Exercism
 
-1. [Hello World](exercism-solutions/rust/hello-world/src/lib.rs) ✔️
-2. [Reverse String](exercism-solutions/rust/reverse-string/src/lib.rs) ✔️
-3. [Lucian's Luscious Lasagna](exercism-solutions/rust/lucians-luscious-lasagna/src/lib.rs) ✔️
-4. [Assembly Line](exercism-solutions/rust/assembly-line/src/lib.rs) ✔️
-5. [A Short Fibonacci Sequence](exercism-solutions/rust/short-fibonacci/src/lib.rs) ✔️
-6. [Semi Structured Logs](exercism-solutions/rust/semi-structured-logs/src/lib.rs) ✔️
-7. [Resistor Color](exercism-solutions/rust/resistor-color/src/lib.rs) ✔️
-8. [Health Statistics](exercism-solutions/rust/health-statistics/src/lib.rs) ✔️
-9. [Low-Power Embedded GameExercise is completed](exercism-solutions/rust/low-power-embedded-game/src/lib.rs) ✔️
-10. [Rectangles](exercism-solutions/rust/rectangles/src/lib.rs) ✔️
-11. [Gigasecond](exercism-solutions/rust/gigasecond/src/lib.rs) ✔️
-12. [Decimal](exercism-solutions/rust/decimal/src/lib.rs) ✔️
-13. [Alphametics](exercism-solutions/rust/alphametics/src/lib.rs) ✔️
-14. [Role-Playing Game](exercism-solutions/rust/role-playing-game/src/lib.rs) ✔️
-15. [RPN Calculator](exercism-solutions/rust/rpn-calculator/src/lib.rs) ✔️
-16. [Magazine Cutout](exercism-solutions/rust/magazine-cutout/src/lib.rs) ✔️
-17. [Grade School](exercism-solutions/rust/grade-school/src/lib.rs) ✔️
-18. [Nucleotide Count](exercism-solutions/rust/nucleotide-count/src/lib.rs) ✔️
-19. [Doubly Linked List](exercism-solutions/rust/doubly-linked-list/src/lib.rs) ❌
-20. [Xorcism](exercism-solutions/rust/xorcism/src/lib.rs) ❌
-21. [Circular Buffer](exercism-solutions/rust/circular-buffer/src/lib.rs) ✔️
-22. [Forth](exercism-solutions/rust/forth/src/lib.rs) ✔️
-23. [Macros](exercism-solutions/rust/macros/src/lib.rs) ❌
-24. [Parallel Letter Frequency](exercism-solutions/rust/parallel-letter-frequency/src/lib.rs) ❌
+1. [Accumulate](exercism-solutions/rust/accumulate/src/lib.rs) ❌
+2. [Custom Set](exercism-solutions/rust/custom-set/src/lib.rs) ❌
+3. [Dominoes](exercism-solutions/rust/dominoes/src/lib.rs) ❌
+4. [Dot DSL](exercism-solutions/rust/dot-dsl/src/lib.rs) ❌
+5. [Fizzy](exercism-solutions/rust/fizzy/src/lib.rs) ❌
+6. [Grep](exercism-solutions/rust/grep/src/lib.rs) ❌
+7. [Hamming](exercism-solutions/rust/hamming/src/lib.rs) ❌
+8. [Knapsack](exercism-solutions/rust/knapsack/src/lib.rs) ❌
+9. [Luhn-from-scratch](exercism-solutions/rust/luhn-from/src/lib.rs) ❌
+10. [Lunh-trait](exercism-solutions/rust/luhn-trait/src/lib.rs) ❌
+11. [Passio](exercism-solutions/rust/passio/src/lib.rs) ❌
+12. [Queen Attack](exercism-solutions/rust/queen-attack/src/lib.rs) ❌
+13. [React](exercism-solutions/rust/react/src/lib.rs) ❌
+14. [Robot Simulator](exercism-solutions/rust/robot-simulator/src/lib.rs) ❌
+15. [Simple Linked List](exercism-solutions/rust/simple-linked-list/src/lib.rs) ❌
+16. [Sublist](exercism-solutions/rust/sublist/src/lib.rs) ❌
+17. [Hello World](exercism-solutions/rust/hello-world/src/lib.rs) ✔️
+18. [Reverse String](exercism-solutions/rust/reverse-string/src/lib.rs) ✔️
+19. [Lucian's Luscious Lasagna](exercism-solutions/rust/lucians-luscious-lasagna/src/lib.rs) ✔️
+20. [Assembly Line](exercism-solutions/rust/assembly-line/src/lib.rs) ✔️
+21. [A Short Fibonacci Sequence](exercism-solutions/rust/short-fibonacci/src/lib.rs) ✔️
+22. [Semi Structured Logs](exercism-solutions/rust/semi-structured-logs/src/lib.rs) ✔️
+23. [Resistor Color](exercism-solutions/rust/resistor-color/src/lib.rs) ✔️
+24. [Health Statistics](exercism-solutions/rust/health-statistics/src/lib.rs) ✔️
+25. [Low-Power Embedded GameExercise is completed](exercism-solutions/rust/low-power-embedded-game/src/lib.rs) ✔️
+26. [Rectangles](exercism-solutions/rust/rectangles/src/lib.rs) ✔️
+27. [Gigasecond](exercism-solutions/rust/gigasecond/src/lib.rs) ✔️
+28. [Decimal](exercism-solutions/rust/decimal/src/lib.rs) ✔️
+29. [Alphametics](exercism-solutions/rust/alphametics/src/lib.rs) ✔️
+30. [Role-Playing Game](exercism-solutions/rust/role-playing-game/src/lib.rs) ✔️
+31. [RPN Calculator](exercism-solutions/rust/rpn-calculator/src/lib.rs) ✔️
+32. [Magazine Cutout](exercism-solutions/rust/magazine-cutout/src/lib.rs) ✔️
+33. [Grade School](exercism-solutions/rust/grade-school/src/lib.rs) ✔️
+34. [Nucleotide Count](exercism-solutions/rust/nucleotide-count/src/lib.rs) ✔️
+35. [Doubly Linked List](exercism-solutions/rust/doubly-linked-list/src/lib.rs) ❌
+36. [Xorcism](exercism-solutions/rust/xorcism/src/lib.rs) ❌
+37. [Circular Buffer](exercism-solutions/rust/circular-buffer/src/lib.rs) ✔️
+38. [Forth](exercism-solutions/rust/forth/src/lib.rs) ✔️
+39. [Macros](exercism-solutions/rust/macros/src/lib.rs) ❌
+40. [Parallel Letter Frequency](exercism-solutions/rust/parallel-letter-frequency/src/lib.rs) ❌
+41. [Variable Length Quantity](exercism-solutions/rust/variable-length-quantity/src/lib.rs) ❌
+42. [Wordy](exercism-solutions/rust/wordy/src/lib.rs) ❌
+43. [Word Count](exercism-solutions/rust/word-count/src/lib.rs) ✔️
 
 ## Resources
 
