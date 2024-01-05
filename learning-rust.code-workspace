@@ -31,6 +31,7 @@
 			"./exercism-solutions/rust/semi-structured-logs/Cargo.toml",
 			"./exercism-solutions/rust/short-fibonacci/Cargo.toml",
 			"./exercism-solutions/rust/xorcism/Cargo.toml",
+			"./exercism-solutions/rust/word-count/Cargo.toml",
 			"./rust-book/book/Cargo.toml",
 			"./rust-book/minigrep/Cargo.toml",
 			"./rust-book/web-server/Cargo.toml",

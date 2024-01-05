@@ -3,7 +3,7 @@ use num_traits::{ToPrimitive, Zero};
 use std::ops;
 
 /// Type implementing arbitrary-precision decimal arithmetic
-#[derive(Debug, Clone, PartialEq, Eq, Ord)]
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Decimal {
     mantissa: BigInt,
     exponent: BigInt,
@@ -126,15 +126,13 @@ impl Decimal {
     pub fn aligned_mantissas(mut lhs: Decimal, mut rhs: Decimal) -> (BigInt, BigInt) {
         if rhs.exponent > lhs.exponent {
             let diff = &rhs.exponent - &lhs.exponent;
-            lhs.mantissa =
-                lhs.mantissa * 10.to_bigint().unwrap().pow(truncate_bigint_to_u32(&diff));
+            lhs.mantissa *= 10.to_bigint().unwrap().pow(truncate_bigint_to_u32(&diff));
             lhs.exponent += diff;
         }
 
         if lhs.exponent > rhs.exponent {
             let diff = lhs.exponent - &rhs.exponent;
-            rhs.mantissa =
-                rhs.mantissa * 10.to_bigint().unwrap().pow(truncate_bigint_to_u32(&diff));
+            rhs.mantissa *= 10.to_bigint().unwrap().pow(truncate_bigint_to_u32(&diff));
             rhs.exponent += diff;
         }
 
