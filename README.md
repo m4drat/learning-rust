@@ -4,7 +4,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" style="width:20%">
 </p>
 
-Repository with the collection of some rust exercises solved by me.
+A collection of resources and code snippets for learning rust.
 
 ## Project structure
 
@@ -71,16 +71,17 @@ Repository with the collection of some rust exercises solved by me.
 32. [RPN Calculator](exercism-solutions/rust/rpn-calculator/src/lib.rs) ✔️
 33. [Magazine Cutout](exercism-solutions/rust/magazine-cutout/src/lib.rs) ✔️
 34. [Grade School](exercism-solutions/rust/grade-school/src/lib.rs) ✔️
-35. [Nucleotide Count](exercism-solutions/rust/nucleotide-count/src/lib.rs) ✔️
-36. [Doubly Linked List](exercism-solutions/rust/doubly-linked-list/src/lib.rs) ❌
-37. [Xorcism](exercism-solutions/rust/xorcism/src/lib.rs) ❌
-38. [Circular Buffer](exercism-solutions/rust/circular-buffer/src/lib.rs) ✔️
-39. [Forth](exercism-solutions/rust/forth/src/lib.rs) ✔️
-40. [Macros](exercism-solutions/rust/macros/src/lib.rs) ❌
-41. [Parallel Letter Frequency](exercism-solutions/rust/parallel-letter-frequency/src/lib.rs) ❌
-42. [Variable Length Quantity](exercism-solutions/rust/variable-length-quantity/src/lib.rs) ❌
-43. [Wordy](exercism-solutions/rust/wordy/src/lib.rs) ❌
-44. [Word Count](exercism-solutions/rust/word-count/src/lib.rs) ✔️
+35. [Nth-prime](exercism-solutions/rust/nth-prime/src/lib.rs) ✔️
+36. [Nucleotide Count](exercism-solutions/rust/nucleotide-count/src/lib.rs) ✔️
+37. [Doubly Linked List](exercism-solutions/rust/doubly-linked-list/src/lib.rs) ❌
+38. [Xorcism](exercism-solutions/rust/xorcism/src/lib.rs) ❌
+39. [Circular Buffer](exercism-solutions/rust/circular-buffer/src/lib.rs) ✔️
+40. [Forth](exercism-solutions/rust/forth/src/lib.rs) ✔️
+41. [Macros](exercism-solutions/rust/macros/src/lib.rs) ❌
+42. [Parallel Letter Frequency](exercism-solutions/rust/parallel-letter-frequency/src/lib.rs) ❌
+43. [Variable Length Quantity](exercism-solutions/rust/variable-length-quantity/src/lib.rs) ❌
+44. [Wordy](exercism-solutions/rust/wordy/src/lib.rs) ✔️
+45. [Word Count](exercism-solutions/rust/word-count/src/lib.rs) ✔️
 
 ## Resources
 

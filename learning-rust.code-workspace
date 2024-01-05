@@ -35,6 +35,7 @@
 			"./exercism-solutions/rust/luhn-from/Cargo.toml",
 			"./exercism-solutions/rust/luhn-trait/Cargo.toml",
 			"./exercism-solutions/rust/wordy/Cargo.toml",
+			"./exercism-solutions/rust/nth-prime/Cargo.toml",
 			"./rust-book/book/Cargo.toml",
 			"./rust-book/minigrep/Cargo.toml",
 			"./rust-book/web-server/Cargo.toml",
