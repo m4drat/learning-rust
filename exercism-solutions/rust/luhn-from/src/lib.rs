@@ -13,6 +13,6 @@ impl Luhn {
 /// Perhaps there exists a better solution for this problem?
 impl<'a> From<&'a str> for Luhn {
     fn from(input: &'a str) -> Self {
-        todo!("From the given input '{input}' create a new Luhn struct.");
+        Self {}
     }
 }

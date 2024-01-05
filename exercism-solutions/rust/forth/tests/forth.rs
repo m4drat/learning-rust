@@ -300,16 +300,6 @@ fn redefining_a_built_in_operator() {
     assert_eq!(vec![12], f.stack());
 }
 
-// #[test]
-// #[ignore]
-// fn can_redefine_a_built_in_operator_that_uses_the_same_operator() {
-//     let mut f = Forth::new();
-//     assert!(f.eval(": + 10 ;").is_ok());
-//     assert!(f.eval(": + + 1 + ;").is_ok());
-//     assert!(f.eval("+").is_ok());
-//     assert_eq!(vec![11], f.stack());
-// }
-
 #[test]
 #[ignore]
 fn can_use_different_words_with_the_same_name() {
