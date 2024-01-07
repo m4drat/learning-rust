@@ -43,7 +43,7 @@ A collection of resources and code snippets for learning rust.
 4. [Dot DSL](exercism-solutions/rust/dot-dsl/src/lib.rs) ❌
 5. [Fizzy](exercism-solutions/rust/fizzy/src/lib.rs) ❌
 6. [Grep](exercism-solutions/rust/grep/src/lib.rs) ❌
-7. [Hamming](exercism-solutions/rust/hamming/src/lib.rs) ❌
+7. [Hamming](exercism-solutions/rust/hamming/src/lib.rs) ✔️
 8. [Knapsack](exercism-solutions/rust/knapsack/src/lib.rs) ❌
 9. [Luhn-from](exercism-solutions/rust/luhn-from/src/lib.rs) ❌
 10. [Luhn-trait](exercism-solutions/rust/luhn-trait/src/lib.rs) ❌
