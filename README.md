@@ -82,6 +82,7 @@ A collection of resources and code snippets for learning rust.
 43. [Variable Length Quantity](exercism-solutions/rust/variable-length-quantity/src/lib.rs) ❌
 44. [Wordy](exercism-solutions/rust/wordy/src/lib.rs) ✔️
 45. [Word Count](exercism-solutions/rust/word-count/src/lib.rs) ✔️
+46. [Allergies](exercism-solutions/rust/allergies/src/lib.rs) ✔️
 
 ## Resources
 
