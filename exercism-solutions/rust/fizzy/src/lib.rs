@@ -3,20 +3,19 @@
 
 use std::ops::Rem;
 
+type MatcherFn<T> = fn(T) -> bool;
+
 /// A Matcher is a single rule of fizzbuzz: given a function on T, should
 /// a word be substituted in? If yes, which word?
 pub struct Matcher<T> {
-    matcher: Box<dyn Fn(T) -> bool>,
+    matcher: MatcherFn<T>,
     substitute: String,
 }
 
 impl<T> Matcher<T> {
-    pub fn new<F>(_matcher: F, _subs: &str) -> Matcher<T>
-    where
-        F: Fn(T) -> bool + 'static,
-    {
+    pub fn new(_matcher: MatcherFn<T>, _subs: &str) -> Matcher<T> {
         Self {
-            matcher: Box::new(_matcher),
+            matcher: _matcher,
             substitute: _subs.to_string(),
         }
     }
@@ -35,6 +34,7 @@ impl<T> Matcher<T> {
 /// here because it's a simpler interface for students to implement.
 ///
 /// Also, it's a good excuse to try out using impl trait.
+#[derive(Default)]
 pub struct Fizzy<T> {
     matchers: Vec<Matcher<T>>,
 }
@@ -75,15 +75,6 @@ where
 
             string
         })
-    }
-}
-
-impl<T> Default for Fizzy<T>
-where
-    T: ToString + Copy,
-{
-    fn default() -> Self {
-        Self::new()
     }
 }
 

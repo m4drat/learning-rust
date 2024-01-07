@@ -41,7 +41,7 @@ A collection of resources and code snippets for learning rust.
 2. [Custom Set](exercism-solutions/rust/custom-set/src/lib.rs) ❌
 3. [Dominoes](exercism-solutions/rust/dominoes/src/lib.rs) ❌
 4. [Dot DSL](exercism-solutions/rust/dot-dsl/src/lib.rs) ❌
-5. [Fizzy](exercism-solutions/rust/fizzy/src/lib.rs) ❌
+5. [Fizzy](exercism-solutions/rust/fizzy/src/lib.rs) ✔️
 6. [Grep](exercism-solutions/rust/grep/src/lib.rs) ❌
 7. [Hamming](exercism-solutions/rust/hamming/src/lib.rs) ✔️
 8. [Knapsack](exercism-solutions/rust/knapsack/src/lib.rs) ❌
