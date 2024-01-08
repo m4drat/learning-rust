@@ -38,7 +38,7 @@ A collection of resources and code snippets for learning rust.
 ## Exercism
 
 1. [Accumulate](exercism-solutions/rust/accumulate/src/lib.rs) ❌
-2. [Custom Set](exercism-solutions/rust/custom-set/src/lib.rs) ❌
+2. [Custom Set](exercism-solutions/rust/custom-set/src/lib.rs) ✔️
 3. [Dominoes](exercism-solutions/rust/dominoes/src/lib.rs) ❌
 4. [Dot DSL](exercism-solutions/rust/dot-dsl/src/lib.rs) ✔️
 5. [Fizzy](exercism-solutions/rust/fizzy/src/lib.rs) ✔️
