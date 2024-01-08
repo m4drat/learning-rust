@@ -77,7 +77,7 @@ A collection of resources and code snippets for learning rust.
 38. [Xorcism](exercism-solutions/rust/xorcism/src/lib.rs) ❌
 39. [Circular Buffer](exercism-solutions/rust/circular-buffer/src/lib.rs) ✔️
 40. [Forth](exercism-solutions/rust/forth/src/lib.rs) ✔️
-41. [Macros](exercism-solutions/rust/macros/src/lib.rs) ❌
+41. [Macros](exercism-solutions/rust/macros/src/lib.rs) ✔️
 42. [Parallel Letter Frequency](exercism-solutions/rust/parallel-letter-frequency/src/lib.rs) ❌
 43. [Variable Length Quantity](exercism-solutions/rust/variable-length-quantity/src/lib.rs) ❌
 44. [Wordy](exercism-solutions/rust/wordy/src/lib.rs) ✔️
