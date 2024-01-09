@@ -42,6 +42,7 @@
 			"./exercism-solutions/rust/dot-dsl/Cargo.toml",
 			"./exercism-solutions/rust/macros/Cargo.toml",
 			"./exercism-solutions/rust/custom-set/Cargo.toml",
+			"./exercism-solutions/rust/simple-linked-list/Cargo.toml",
 			"./rust-book/book/Cargo.toml",
 			"./rust-book/minigrep/Cargo.toml",
 			"./rust-book/web-server/Cargo.toml",
