@@ -46,7 +46,7 @@ A collection of resources and code snippets for learning rust.
 | 5 | Fizzy | [Link](exercism-solutions/rust/fizzy/src/lib.rs) | ⭐⭐ | ✔️ |
 | 6 | Grep | [Link](exercism-solutions/rust/grep/src/lib.rs) |  | ❌ |
 | 7 | Hamming | [Link](exercism-solutions/rust/hamming/src/lib.rs) | ⭐⭐ | ✔️ |
-| 8 | Knapsack | [Link](exercism-solutions/rust/knapsack/src/lib.rs) |  | ❌ |
+| 8 | Knapsack | [Link](exercism-solutions/rust/knapsack/src/lib.rs) | ⭐⭐ | ✔️ |
 | 9 | Luhn-from | [Link](exercism-solutions/rust/luhn-from/src/lib.rs) | ⭐⭐ | ✔️ |
 | 10 | Luhn-trait | [Link](exercism-solutions/rust/luhn-trait/src/lib.rs) | ⭐⭐ | ✔️ |
 | 11 | Luhn | [Link](exercism-solutions/rust/luhn/src/lib.rs) | ⭐⭐ | ✔️ |
