@@ -32,6 +32,7 @@
 			"./exercism-solutions/rust/short-fibonacci/Cargo.toml",
 			"./exercism-solutions/rust/xorcism/Cargo.toml",
 			"./exercism-solutions/rust/word-count/Cargo.toml",
+			"./exercism-solutions/rust/luhn/Cargo.toml",
 			"./exercism-solutions/rust/luhn-from/Cargo.toml",
 			"./exercism-solutions/rust/luhn-trait/Cargo.toml",
 			"./exercism-solutions/rust/wordy/Cargo.toml",
