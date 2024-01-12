@@ -49,10 +49,10 @@ A collection of resources and code snippets for learning rust.
 10. [Luhn-trait](exercism-solutions/rust/luhn-trait/src/lib.rs) ❌
 11. [Luhn](exercism-solutions/rust/luhn/src/lib.rs) ❌
 12. [Passio](exercism-solutions/rust/passio/src/lib.rs) ❌
-13. [Queen Attack](exercism-solutions/rust/queen-attack/src/lib.rs) ❌
+13. [Queen Attack](exercism-solutions/rust/queen-attack/src/lib.rs) ✔️
 14. [React](exercism-solutions/rust/react/src/lib.rs) ❌
 15. [Robot Simulator](exercism-solutions/rust/robot-simulator/src/lib.rs) ❌
-16. [Simple Linked List](exercism-solutions/rust/simple-linked-list/src/lib.rs) ❌
+16. [Simple Linked List](exercism-solutions/rust/simple-linked-list/src/lib.rs) ✔️
 17. [Sublist](exercism-solutions/rust/sublist/src/lib.rs) ❌
 18. [Hello World](exercism-solutions/rust/hello-world/src/lib.rs) ✔️
 19. [Reverse String](exercism-solutions/rust/reverse-string/src/lib.rs) ✔️
